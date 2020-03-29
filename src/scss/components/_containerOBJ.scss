@@ -1,0 +1,59 @@
+.containerOBJ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  &-clases {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: none;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 33%;
+  }
+  @include responsive(1070px) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    top: 0;
+    left: 0;
+  }
+  @include responsive(large) {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  @include responsive(medium) {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-height: 570px) and (min-height: 560px) {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-height: 550px) {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ti {
+  margin: 3rem;
+  padding: 2rem;
+  margin-bottom: 1rem !important;
+}

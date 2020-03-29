@@ -1,0 +1,40 @@
+.foot {
+  height: 100%;
+  max-width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: --color-body;
+  &-redes {
+    padding: 0 5px;
+  }
+  &-text {
+    color: #fff;
+    font-family: var(--body-font);
+  }
+  &-image {
+    font-size: 2rem;
+    transform: rotate(0);
+    transition: 1s;
+    &:hover {
+      transform: rotate(360deg);
+      transition: 1s;
+    }
+  }
+  &-space {
+    padding-right: 1rem;
+  }
+}
+.xxx {
+  height: 100%;
+  max-width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: --color-body;
+  margin: 2rem;
+}

@@ -1,0 +1,113 @@
+.cont {
+  width: 97%;
+  background: url(../../assets/images/img-background-2.png);
+  -webkit-box-shadow: 0px 0px 10px 7px rgba(38, 74, 255, 1);
+  -moz-box-shadow: 0px 0px 10px 7px rgba(38, 74, 255, 1);
+  box-shadow: 0px 0px 10px 7px rgba(38, 74, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  padding: 4.7rem;
+  @include responsive(1070px) {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  @include responsive(large) {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  @include responsive(medium) {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  @media screen and (max-height: 570px) and (min-height: 560px) {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  @media screen and (max-height: 550px) {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  &-text {
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    &::first-letter {
+      color: var(--color-secondary);
+      font-family: var(--font-main);
+    }
+    @include responsive(1070px) {
+      font-size: 1.8;
+      &::first-letter {
+        color: var(--color-secondary);
+        font-family: var(--font-main);
+        font-size: 2rem;
+      }
+    }
+    @include responsive(large) {
+      font-size: 1.8rem;
+      &::first-letter {
+        color: var(--color-secondary);
+        font-family: var(--font-main);
+        font-size: 2rem;
+      }
+    }
+    @include responsive(medium) {
+      font-size: 1.4rem;
+      &::first-letter {
+        color: var(--color-secondary);
+        font-family: var(--font-main);
+        font-size: 1.7rem;
+      }
+    }
+  }
+  &-description {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    &::first-letter {
+      color: var(--color-secondary);
+      font-family: var(--font-main);
+      font-size: 2rem;
+    }
+    @include responsive(1070px) {
+      font-size: 1.4;
+      &::first-letter {
+        color: var(--color-secondary);
+        font-family: var(--font-main);
+        font-size: 1.8rem;
+      }
+    }
+    @include responsive(large) {
+      font-size: 1.2rem;
+      &::first-letter {
+        color: var(--color-secondary);
+        font-family: var(--font-main);
+        font-size: 1.8rem;
+      }
+    }
+    @include responsive(medium) {
+      font-size: 1.2rem;
+      &::first-letter {
+        color: var(--color-secondary);
+        font-family: var(--font-main);
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &-df {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-secondary);
+  }
+}

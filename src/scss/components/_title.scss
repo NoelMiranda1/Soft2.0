@@ -1,0 +1,88 @@
+.title {
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.x {
+  color: rgb(0, 0, 0);
+  text-align: initial !important;
+  font-size: 2rem !important;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  @include responsive(medium) {
+    color: #fff;
+    margin: 1rem;
+    font-size: 1rem;
+  }
+}
+.parafo {
+  color: #fff;
+  margin: 2.5rem;
+  font-size: 1.4rem;
+  @include responsive(1070px) {
+    margin-top: 1rem;
+  }
+  @include responsive(950px) {
+    margin-top: 1rem;
+  }
+  @media screen and (min-width: 700px) and (max-width: 900px) {
+    margin-top: 1rem;
+  }
+  @include responsive(medium) {
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-height: 550px) {
+    margin-top: 1rem;
+  }
+}
+.top {
+  @media screen and (min-width: 700px) and (max-width: 900px) {
+    margin-top: 5.5rem;
+  }
+  @include responsive(medium) {
+    margin-top: 7rem;
+  }
+
+  @media screen and (max-height: 550px) {
+    margin-top: 7rem;
+  }
+  @include responsive(360px) {
+    height: 7rem;
+  }
+}
+
+.parrafoW {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 5rem;
+  margin-bottom: 2.5rem;
+  @include responsive(medium) {
+    color: #fff;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+}
+.TEXTO {
+  margin-right: 7rem !important;
+  margin-left: 2.5rem !important;
+  @include responsive(medium) {
+    margin: 1.5rem !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+.c {
+  color: #000 !important;
+}
+
+.b {
+  color: #fff !important;
+  margin: 1rem;
+  @include responsive(medium) {
+    margin: 2rem;
+    font-size: 2rem;
+  }
+}
