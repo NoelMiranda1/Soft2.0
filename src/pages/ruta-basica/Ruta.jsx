@@ -5,8 +5,8 @@ const Ruta = () => {
   return (
     <div className="l-ruta">
       <div>
-        <div>
-          <Title title="Ruta basica" className="title" />
+        <div className="rutaa">
+          <Title title="Ruta basica" className="title g" />
           <p className="parrafoS">
             La prueba del camino básico es una técnica de prueba de la Caja
             Blanca propuesta por Tom McCabe. <br />
