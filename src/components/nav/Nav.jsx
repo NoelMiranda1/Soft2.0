@@ -1,21 +1,19 @@
-import React, { useState } from "react";
-import { Link } from "@reach/router";
+import React from "react";
+import { Link } from 'react-router-dom'
 
 const Nav = props => {
   const { active } = props;
-  const [setActive] = useState(false);
-  console.log(active);
+  
   return (
     <ul className={`navbar-content ${active ? "navbar-show" : ""}`}>
       <li className="navbar-item to">
-        <Link className="navbar-link" onClick={() => setActive(active)} to="/">
+        <Link className="navbar-link" to="/">
           Inicio
         </Link>
       </li>
       <li className="navbar-item">
         <Link
           className="navbar-link"
-          onClick={() => setActive(active)}
           to="/white"
         >
           Blanca
@@ -24,7 +22,6 @@ const Nav = props => {
       <li className="navbar-item">
         <Link
           className="navbar-link"
-          onClick={() => setActive(active)}
           to="/black"
         >
           Negra
@@ -33,7 +30,6 @@ const Nav = props => {
       <li className="navbar-item">
         <Link
           className="navbar-link"
-          onClick={() => setActive(active)}
           to="/estructure"
         >
           Estructura
@@ -42,7 +38,6 @@ const Nav = props => {
       <li className="navbar-item">
         <Link
           className="navbar-link"
-          onClick={() => setActive(active)}
           to="/objet"
         >
           Orientada a Obj
@@ -51,7 +46,6 @@ const Nav = props => {
       <li className="navbar-item">
         <Link
           className="navbar-link"
-          onClick={() => setActive(active)}
           to="/ruta"
         >
           Ruta Basica
