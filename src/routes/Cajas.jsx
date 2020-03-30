@@ -8,6 +8,7 @@ import Objet from "../pages/pruebas-orien-objetos/Objets";
 import Estructure from "../pages/estructura-de-control/Estructure";
 import { Result } from "antd";
 import { Link } from "@reach/router";
+import Ruta from "../pages/ruta-basica/Ruta";
 
 const NotFound = () => {
   return (
@@ -36,6 +37,7 @@ const Cajas = () => {
         <Black path="/black" />
         <Objet path="/objet" />
         <Estructure path="/estructure" />
+        <Ruta path="/ruta" />
         <NotFound default />
       </Router>
     </>

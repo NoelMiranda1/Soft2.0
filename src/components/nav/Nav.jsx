@@ -48,6 +48,15 @@ const Nav = props => {
           Orientada a Obj
         </Link>
       </li>
+      <li className="navbar-item">
+        <Link
+          className="navbar-link"
+          onClick={() => setActive(active)}
+          to="/ruta"
+        >
+          Ruta Basica
+        </Link>
+      </li>
     </ul>
   );
 };
